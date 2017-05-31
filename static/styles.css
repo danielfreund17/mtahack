@@ -2553,7 +2553,7 @@ input[type="button"].special,
 input[type="submit"].special,
 input[type="reset"].special,
 .button.special {
-  background: rgba(52, 27, 43, 0.8);;
+  background: rgba(131, 211, 201, 1);
   border-color: #83d3c9;
   color: #fff !important;
 }
@@ -2563,7 +2563,11 @@ input[type="submit"].special:hover,
 input[type="reset"].special:hover,
 .button.special:hover {
   background: #96dad1 !important;
-  border-color: #96dad1 !important;
+  border: 1px solid rgba(52, 27, 43, 1) !important;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 input[type="button"].fit,
@@ -2943,7 +2947,7 @@ input[type="reset"].small,
   -webkit-animation-fill-mode: forwards;
   -ms-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  background: #83d3c9;
+  background: rgba(131, 211, 201, 0.9);
   color: #fff;
   display: inline-block;
   opacity: 0;
@@ -3131,6 +3135,10 @@ body.index #main {
     background-attachment: scroll;
   }
 
+  #details {
+    background-attachment: scroll;
+  }
+
   /* CTA */
   #cta {
     padding: 4em;
@@ -3197,7 +3205,11 @@ body.index #main {
 
   /* Banner */
   #banner {
-    background-size: 15em, 15em, auto, cover;
+    background-size: 15em, 15em, cover;
+  }
+
+  #details {
+    background-size: 15em, 15em, cover;
   }
 
   /* Main */
@@ -3620,14 +3632,20 @@ body.index #main {
 
   /* Banner */
   #banner {
-    background-size: 10em, 10em, auto, cover;
+    background-size: 10em, 10em, cover;
+    padding: 6em 0;
+  }
+
+  #details {
+    background-size: 10em, 10em, cover;
     padding: 6em 0;
   }
 
   #banner .inner {
-    background: none;
     display: block;
-    padding: 0 1.5em;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em 1.5em;
   }
 
   #banner .inner header h2 {
