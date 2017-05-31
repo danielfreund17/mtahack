@@ -1,14 +1,22 @@
 <div id="header" class="alt">
   <nav id="nav">
     <ul>
-      <li class="current"><a href="index.html">Welcome</a></li>
+      <li class="current">
+        <a routerLink="">
+          <div>
+            <img src="../../favicon.ico"/>
+            <span>MTAHack</span>
+          </div>
+        </a>
+      </li>
       <li class="submenu">
         <a href="#"><span class="caret" style="margin: 0px 3px; padding: 2px 0px"></span>Menu</a>
         <ul>
+          <li><a routerLink="" class="scrolly">Home</a></li>
           <li><a href="#main" class="scrolly">Who are we?</a></li>
           <li><a href="#contest" class="scrolly">Competition</a></li>
           <li><a href="#prizes" class="scrolly">Prizes</a></li>
-          <li><a href="contact.html" >Contact</a></li>
+          <li><a routerLink="contact" routerLinkActive="active">Contact</a></li>
         </ul>
       </li>
       <li><a href="http://ec2-35-167-187-18.us-west-2.compute.amazonaws.com/" target="_blank" class="button special">Sign up for hackathon!</a></li>
