@@ -6,12 +6,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent, FooterComponent } from '../../components';
-import { DashboardComponent, ContactComponent } from '../index';
+import { DashboardComponent, ContactComponent, DetailsComponent, SponsorsComponent} from '../index';
 
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'details', component: DetailsComponent },
+  { path: 'sponsors', component: SponsorsComponent }
 ];
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ const appRoutes: Routes = [
     DashboardComponent,
     ContactComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    DetailsComponent,
+    SponsorsComponent
   ],
   imports: [
     BrowserModule,

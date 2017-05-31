@@ -1,0 +1,98 @@
+<div id="page-wrapper">
+  <section id="details" [ngSwitch]="states[currentState]">
+
+    <section *ngSwitchCase="'home'" class="details-container" id="contest">
+      <div class="row">
+        <div class="8u 12u(narrower)">
+          <header>
+            <h2>The theme of this year's competition is <strong>smart education</strong></h2>
+          </header>
+          <p>So, you're probably sitting down in your cozy chair, scratching your head wondering what the hell we want from you? <br />
+            We're basically giving you the option to do <strong>whatever you want</strong>! <br />Just try to make our education better.
+          </p>
+        </div>
+      </div>
+      <ul class="buttons vertical">
+        <li><a class="button" routerLink="" >Back</a></li>
+        <li><a class="button" (click)="onNextClick()">Continue</a></li>
+      </ul>
+    </section>
+
+    <section *ngSwitchCase="'schedule'" class="details-container" id="schedule">
+      <header>
+        <h2>MTAHack Schedule</h2>
+      </header>
+        <table border=1 frame=void rules=rows>
+          <tr>
+            <th>Hour</th>
+            <th>Thursday 6.4</th>
+            <th>Friday 7.4</th>
+          </tr>
+          <tr>
+            <td>08:00</td>
+            <td></td>
+            <td>First judging contest</td>
+          </tr>
+          <tr>
+            <td>09:00</td>
+            <td>Breakfast + Register</td>
+            <td>Breakfast</td>
+          </tr>
+          <tr>
+            <td>10:00</td>
+            <td>Start Hack!</td>
+            <td>Presentation Time</td>
+          </tr>
+          <tr>
+            <td>11:30</td>
+            <td></td>
+            <td>See you next year!</td>
+          </tr>
+          <tr>
+            <td>13:00</td>
+            <td>Lunch</td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td>Happy Hour</td>
+          </tr>
+          <tr>
+            <td>20:00</td>
+            <td>Pizza Time</td>
+          </tr>
+          <tr>
+            <td>00:00</td>
+            <td>Munchathon Time</td>
+          </tr>
+        </table>
+      <ul class="buttons vertical">
+        <li><a class="button" routerLink="" >Back</a></li>
+        <li><a class="button" (click)="onNextClick()">Continue</a></li>
+      </ul>
+    </section>
+
+    <section *ngSwitchCase="'s'" id="schedule">
+      <div class="row details-container">
+
+        <ul class="buttons vertical">
+          <li><a class="button" (click)="onBackClick()">Back</a></li>
+          <li><a class="button" (click)="onNextClick()">Continue</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div *ngSwitchCase="'signup'" class="details-container">
+      <header>
+        <h2>Ready to write some <strong>code</strong>?</h2>
+        <h3>Sign up for the hackathon now!</h3>
+      </header>
+      <footer>
+        <ul class="buttons">
+          <li><a class="button" (click)="onBackClick()">Back</a></li>
+          <li><a href="http://ec2-35-167-187-18.us-west-2.compute.amazonaws.com/" target="_blank" class="button">Hell yeah!</a></li>
+        </ul>
+      </footer>
+    </div>
+
+  </section>
+</div>
