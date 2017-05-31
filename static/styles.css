@@ -2270,7 +2270,7 @@ input[type="email"] {
 }
 
 .image:before {
-  background: url("images/overlay.png");
+  background: url("../resources/images/overlay.png");
   content: '';
   height: 100%;
   left: 0;
@@ -2337,19 +2337,19 @@ input[type="email"] {
 }
 
 .icon.circle.fa-linkdin {
-  background-image: url('./images/linkdin-icon.png');
+  background-image: url('../resources/images/linkdin-icon.png');
   background-size: cover;
   color: #fff;
 }
 
 .icon.circle.fa-facebook {
-  background-image: url('./images/facebook-icon.png');
+  background-image: url('../resources/images/facebook-icon.png');
   background-size: cover;
   color: #fff;
 }
 
 .icon.circle.fa-instagram {
-  background-image: url('./images/instagram-icon2.png');
+  background-image: url('../resources/images/instagram-icon2.png');
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -2594,7 +2594,7 @@ input[type="reset"].small,
 }
 
 .wrapper.style2 {
-  background-image: url("images/overlay.png"), url("images/overlay.png"), url("images/overlay.png"), url("./images/bg2.jpg");
+  background-image: url("../resources/images/overlay.png"), url("../resources/images/overlay.png"), url("../resources/images/overlay.png"), url("../resources/images/bg2.jpg");
   background-position: bottom left, top right;
   background-size: 100%;
   color: #fff;
@@ -2911,7 +2911,7 @@ input[type="reset"].small,
 #banner {
   background-attachment: scroll, scroll, fixed;
   background-color: #645862;
-  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("./images/mtahack-cover.png");
+  background-image: url("../resources/images/light-bl.svg"), url("../resources/images/light-br.svg"), url("../resources/images/mtahack-cover.png");
   background-position: bottom left, bottom right, top left, top center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 25em, 25em, cover;
@@ -2924,7 +2924,7 @@ input[type="reset"].small,
 #details {
   background-attachment: scroll, scroll, fixed;
   background-color: #645862;
-  background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("./images/details-cover.png");
+  background-image: url("../resources/images/light-bl.svg"), url("../resources/images/light-br.svg"), url("../resources/images/details-cover.png");
   background-position: bottom left, bottom right, top left, top center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 25em, 25em, cover;
@@ -2990,7 +2990,7 @@ input[type="reset"].small,
 /* Main */
 
 #main {
-  background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+  background-image: url("../resources/images/dark-tl.svg"), url("../resources/images/dark-tr.svg"), url("../resources/images/dark-bl.svg"), url("../resources/images/dark-br.svg");
   background-position: top left, top right, bottom left, bottom right;
   background-repeat: no-repeat;
   background-size: 25em;
@@ -3022,7 +3022,7 @@ body.index #main {
 #cta {
   background-attachment: scroll, scroll, scroll, fixed;
   background-color: #645862;
-  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("./images/bg3.jpg");
+  background-image: url("../resources/images/light-tl.svg"), url("../resources/images/light-tr.svg"), url("../resources/images/overlay.png"), url("../resources/images/bg3.jpg");
   background-position: top left, top right, top left, bottom center;
   background-repeat: no-repeat, no-repeat, repeat, no-repeat;
   background-size: 25em, 25em, auto, cover;
