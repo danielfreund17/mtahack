@@ -3591,6 +3591,7 @@ body.index #main {
   input[type="reset"].fit,
   .button.fit {
     width: auto;
+    min-width: 70px;
   }
 
   /* List */
